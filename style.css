@@ -1,0 +1,61 @@
+img.gif {
+  visibility: hidden;
+}
+
+.jsgif {
+  position: relative;
+}
+
+.gifcontrol {
+  position: absolute;
+  top: 0%;
+  width: 600px;
+  height: 100%;
+  cursor: pointer;
+  transition: background 0.25s ease-in-out;
+  z-index: 100;
+}
+.gifcontrol:after {
+  transition: background 0.25s ease-in-out;
+  position: absolute;
+  content: "";
+  display: block;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+}
+.gifcontrol.loading {
+  background: rgba(255, 255, 255, 0.75);
+}
+.gifcontrol.loading:after {
+  background: #337AB7;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+}
+.gifcontrol.playing {
+  /* Only show the 'stop' button on hover */
+}
+.gifcontrol.playing:after {
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+  left: calc(50% - 65px);
+  top: calc(50% - 65px);
+  border-left: 40px solid #337AB7;
+  border-right: 40px solid #337AB7;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+}
+.gifcontrol.playing:hover:after {
+  opacity: 1;
+}
+.gifcontrol.paused {
+  background: rgba(255, 255, 255, 0.5);
+}
+.gifcontrol.paused:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 100px 0px 100px 200px;
+  border-color: transparent transparent transparent #337AB7;
+}
