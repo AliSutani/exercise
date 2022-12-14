@@ -20,7 +20,7 @@ img.gif {
   position: absolute;
   content: "";
   display: block;
-  left: calc(50% - 100px);
+  left: calc(50% - 0px);
   top: calc(50% - 100px);
 }
 .gifcontrol.loading {
