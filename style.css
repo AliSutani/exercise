@@ -20,7 +20,7 @@ img.gif {
   position: absolute;
   content: "";
   display: block;
-  left: calc(50% - 100px);
+  left: calc(50% - 75px);
   top: calc(50% - 100px);
 }
 .gifcontrol.loading {
@@ -38,8 +38,8 @@ img.gif {
 .gifcontrol.playing:after {
   opacity: 0;
   transition: opacity 0.25s ease-in-out;
-  left: calc(50% - 65px);
-  top: calc(50% - 65px);
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
   border-left: 40px solid #337AB7;
   border-right: 40px solid #337AB7;
   width: 100px;
