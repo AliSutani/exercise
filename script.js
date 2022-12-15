@@ -2,7 +2,7 @@ var gifElements = document.querySelectorAll('img.gif');
 
 function setPadding() {
 	let w = window.innerWidth;
-	let padding = (w-600)/2
+	let padding = (w-600)/2 - 15
 	controlElement.style.left = padding+ "px";
 }
 
